@@ -184,12 +184,15 @@ This should be revised once the final PhD research narrative is settled.
 Keep this concise rather than copying every CV keyword.
 
 ### Statistical & Reliable Machine Learning
+
 Calibration, uncertainty quantification, conformal prediction, statistical learning.
 
 ### Biomedical & Neural Data Science
+
 EEG/fMRI, neural encoding, clinical prediction, multimodal biomedical data.
 
 ### Representation Learning
+
 Pretrained speech/language models, representation analysis, multimodal learning.
 
 ---
