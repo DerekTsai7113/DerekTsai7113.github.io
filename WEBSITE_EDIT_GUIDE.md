@@ -37,7 +37,7 @@ These should be fixed before putting the website on the CV or sending it to facu
    - example InspireHEP ID
    - example Google Scholar ID
    - Albert Einstein custom social link
-   These must be removed/replaced. Until then, an easy temporary option is to set `social: false` in `_pages/about.md`.
+     These must be removed/replaced. Until then, an easy temporary option is to set `social: false` in `_pages/about.md`.
 3. **Research page is currently empty.** The title and description are correct, but the real project cards/pages have not been added yet.
 4. **CV page still points to `/assets/pdf/example_pdf.pdf` and still uses starter RenderCV content.** Replace this with the real PhD CV PDF.
 5. **The built-in search still indexes starter blog/demo content.** For a minimal application site, either set `search_enabled: false` in `_config.yml` for now, or later remove/disable the demo posts and keep search.
@@ -212,12 +212,15 @@ Avoid filling the page with social accounts that are unrelated to academic/resea
 Current structure:
 
 ### Statistical & Reliable Machine Learning
+
 Calibration, uncertainty quantification, conformal prediction, statistical learning.
 
 ### Biomedical & Neural Data Science
+
 EEG/fMRI, neural encoding, clinical prediction, multimodal biomedical data.
 
 ### Representation Learning
+
 Pretrained speech/language models, representation analysis, multimodal learning.
 
 This is intentionally broader than one narrow research topic. It can be refined after the final PhD application narrative is settled.
