@@ -36,6 +36,25 @@ The homepage is now a usable first-pass academic profile. The largest unfinished
 
 The current CV file still contains template content internally, but this is acceptable for now because the page is hidden from navigation. Do not spend time polishing it until the final PhD CV is ready.
 
+### Important research-organization decision
+
+There are **two distinct Academia Sinica research lines**, and they should not be merged simply because they were done at the same institution.
+
+1. **Speech–Brain Representation Alignment** — the main internship project.
+   - Focus: EEG / speech–brain representation alignment, pretrained speech/language representations, neural encoding/evaluation, and clean-versus-noisy speech analyses.
+   - Treat this as the primary Academia Sinica internship project on the website and CV.
+
+2. **fMRI Cross-Condition Speech Decoding / ICASSP 2027 Collaboration** — a separate collaboration with another lab member.
+   - Keep the public-facing title provisional until the paper title is finalized.
+   - Current research setting: fMRI Pre/Post/Clean decoding, 21 participants, grouped stimulus folds, left-hemisphere ROI analysis, and sequence/tabular model comparisons including S5, TabM, and TabPFN.
+   - The collaboration is targeting **ICASSP 2027**, with a working internal draft deadline of **2026-09-16**.
+   - A publication/manuscript output is **not guaranteed yet**; whether this becomes a submitted paper depends on the final results.
+   - Do not state an authorship position publicly until the author list/order is actually settled.
+
+For the website, it is appropriate to create two separate Research project pages because the research questions, data, methods, and collaboration structures are different.
+
+For the CV, keep one **Research Intern — Academia Sinica** experience block unless there is a strong reason to split employment entries; the two projects can be separated as project-level bullets/subheadings inside that experience.
+
 ---
 
 ## Next tasks — do these later
@@ -55,9 +74,12 @@ Replace the starter/example project files with real research projects.
 Recommended order:
 
 1. **Speech–Brain Representation Alignment** — Academia Sinica
-2. **Cause-of-Death Modeling** — University of Washington
-3. **Adaptive Conformal Prediction for Chaotic Time Series** — University of Washington
-4. **Causal Inference for E-cigarette Use and Respiratory Disease** — optional secondary project
+2. **fMRI Cross-Condition Speech Decoding** — Academia Sinica collaboration; ICASSP 2027 target, output contingent on final results
+3. **Cause-of-Death Modeling** — University of Washington
+4. **Adaptive Conformal Prediction for Chaotic Time Series** — University of Washington
+5. **Causal Inference for E-cigarette Use and Respiratory Disease** — optional secondary project
+
+The second Academia Sinica title above is a **working website label**, not a claimed paper title. Replace it with the real title only after the collaboration finalizes the manuscript title.
 
 Each major project page should follow roughly this structure:
 
@@ -77,9 +99,23 @@ Each major project page should follow roughly this structure:
 
 Keep **My Contribution** explicit so a faculty reader can quickly distinguish the overall project from the work personally performed.
 
+For the ICASSP collaboration in particular, clearly distinguish the overall team project from Derek's own contribution. Do not imply sole ownership of the project or a finalized publication before submission.
+
 For project cards or homepage summaries, keep descriptions to about 2–3 sentences. Put technical detail, figures, and extended explanations inside the individual project page.
 
-### Priority 2 — Add figures to major projects
+### Priority 2 — Decide homepage Featured Research after the ICASSP result is clearer
+
+The Research page can contain both Academia Sinica projects, but the homepage does not need to show every project.
+
+For now, the likely featured set is:
+
+1. **Speech–Brain Representation Alignment**
+2. **Adaptive Conformal Prediction for Chaotic Time Series** or **Cause-of-Death Modeling**
+3. One additional strongest project
+
+If the fMRI collaboration produces a credible ICASSP 2027 submission, it will likely deserve a Featured Research slot. If it does not reach submission, it can still remain on the Research page as a substantive collaboration, but it does not need to displace a stronger completed project on the homepage.
+
+### Priority 3 — Add figures to major projects
 
 For each major project, use only the most informative 1–2 figures rather than turning the site into a full report.
 
@@ -91,7 +127,9 @@ Good figure types include:
 
 Store project images under `assets/img/` or a clearly named subfolder.
 
-### Priority 3 — Add the final PhD CV
+For the fMRI collaboration, good candidates later would be one architecture/pipeline figure and one representative ROI/model result figure, but only after the final analysis and paper framing stabilize.
+
+### Priority 4 — Add the final PhD CV
 
 Wait until the school list and manuscript/publication status are settled.
 
@@ -127,7 +165,7 @@ nav: true
 
 There is no need to use the template's RenderCV system if a normal PDF link is simpler.
 
-### Priority 4 — Optional 30–60 second introduction video
+### Priority 5 — Optional 30–60 second introduction video
 
 Add this only after the written site is stable.
 
@@ -140,11 +178,21 @@ Suggested content:
 
 The goal is clear communication and natural spoken English, not high production value.
 
-### Priority 5 — Publications / manuscript section, only if applicable
+### Priority 6 — Publications / manuscript section, only if applicable
 
 If there is a real manuscript, submission, preprint, or publication worth listing later, then enable the Publications page and add it accurately.
 
-Do not create a Publications section merely to fill space.
+The most likely near-term candidate is the separate **fMRI / ICASSP 2027 collaboration**, but its status is still contingent on the final results. Until a manuscript is actually submitted or made public, keep the Publications page hidden and describe the work only as an ongoing research collaboration/project.
+
+Once the submission status is real, update all of the following together:
+
+- exact paper title
+- exact author list and author order
+- exact venue
+- accurate status such as `Submitted`, `Under Review`, `Accepted`, or `Preprint`
+- project page link to the manuscript/preprint only if it is publicly accessible
+
+Do not create a Publications section merely to fill space, and do not label work as `Submitted` before submission actually occurs.
 
 ---
 
