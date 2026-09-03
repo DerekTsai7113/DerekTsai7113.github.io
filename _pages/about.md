@@ -6,7 +6,7 @@ subtitle: M.S. in Statistics, University of Washington
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: Photo.png
   image_circular: false
   more_info: >
     <p>Seattle, WA</p>
