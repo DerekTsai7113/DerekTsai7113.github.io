@@ -22,6 +22,7 @@ The basic site setup and cleanup are now complete enough to pause safely and con
   `assets/img/Photo.png`
 
   and `_pages/about.md` points to `Photo.png`.
+
 - Social/contact links have been cleaned. `_data/socials.yml` now contains only:
   - Email: `testat0929@gmail.com`
   - GitHub: `DerekTsai7113`
