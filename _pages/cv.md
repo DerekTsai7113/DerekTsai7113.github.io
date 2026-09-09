@@ -7,6 +7,10 @@ nav_order: 2
 description: Curriculum Vitae
 ---
 
-My current curriculum vitae is available below.
+<script>
+  window.location.replace("/assets/pdf/Derek_Tsai_CV.pdf");
+</script>
 
-[Download CV (PDF)](/assets/pdf/Derek_Tsai_CV.pdf)
+<noscript>
+  <p><a href="/assets/pdf/Derek_Tsai_CV.pdf">Open CV (PDF)</a></p>
+</noscript>

@@ -21,6 +21,19 @@ latest_posts:
   enabled: false
 ---
 
+<style>
+@media (min-width: 576px) {
+  .profile {
+    width: 24% !important;
+  }
+
+  .profile.float-right {
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+</style>
+
 I am an M.S. student in Statistics at the University of Washington. My research interests lie at the intersection of **statistical machine learning, reliable AI, biomedical data science, and neural representation learning**.
 
 My recent research at Academia Sinica studies how representations from pretrained speech and language models align with neural responses measured using EEG and fMRI. I have also worked on medical machine learning, uncertainty quantification, conformal prediction, and causal inference.
@@ -37,6 +50,10 @@ EEG/fMRI, neural encoding, clinical prediction, and multimodal biomedical data.
 
 **Representation Learning**  
 Pretrained speech and language models, representation analysis, and multimodal learning.
+
+## Methods & Expertise
+
+Statistical learning · uncertainty quantification · conformal prediction · neural encoding · EEG/fMRI analysis · representation learning · causal inference
 
 ## Featured Research
 
