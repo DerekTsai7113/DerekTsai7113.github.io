@@ -42,8 +42,8 @@ Pretrained speech and language models, representation analysis, and multimodal l
 
 My recent research includes:
 
-- **Speech–Brain Representation Alignment** — Academia Sinica
-- **Cause-of-Death Modeling** — University of Washington
-- **Adaptive Conformal Prediction for Chaotic Time Series** — University of Washington
+- [**Speech–Brain Representation Alignment**](/projects/speech-brain-alignment/) — Academia Sinica
+- [**Cause-of-Death Modeling**](/projects/cause-of-death-modeling/) — University of Washington
+- [**Adaptive Conformal Prediction for Chaotic Time Series**](/projects/adaptive-conformal-prediction/) — University of Washington
 
-More details are available on the [Projects](/projects/) page.
+See the full [Research](/projects/) page for additional work and details.
