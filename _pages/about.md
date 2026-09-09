@@ -21,7 +21,7 @@ latest_posts:
   enabled: false
 ---
 
-{% include academic_style.liquid %}
+<link rel="stylesheet" href="/assets/css/academic.css">
 
 I am an M.S. student in Statistics at the University of Washington. My research interests lie at the intersection of **statistical machine learning, reliable AI, biomedical data science, and neural representation learning**.
 

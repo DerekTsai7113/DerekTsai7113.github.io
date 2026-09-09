@@ -8,7 +8,7 @@ category: research
 related_publications: false
 ---
 
-{% include academic_style.liquid %}
+<link rel="stylesheet" href="/assets/css/academic.css">
 
 <p class="project-meta">University of Washington · Graduate Research Project</p>
 

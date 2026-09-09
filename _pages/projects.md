@@ -8,7 +8,7 @@ nav_order: 1
 horizontal: false
 ---
 
-{% include academic_style.liquid %}
+<link rel="stylesheet" href="/assets/css/academic.css">
 
 My work uses statistical and machine-learning methods to study reliable prediction and representation learning in biomedical and scientific settings. The projects below span neural encoding, fMRI decoding, clinical prediction, and uncertainty quantification.
 
