@@ -8,6 +8,10 @@ category: research
 related_publications: false
 ---
 
+{% include academic_style.liquid %}
+
+<p class="project-meta">University of Washington · Graduate Research Project</p>
+
 ## Research Question
 
 How reliable is standard split conformal prediction when forecasts are generated recursively in a chaotic dynamical system, and can adaptive calibration recover useful coverage as forecast errors evolve over time?

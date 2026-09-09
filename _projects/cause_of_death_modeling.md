@@ -8,6 +8,10 @@ category: research
 related_publications: false
 ---
 
+{% include academic_style.liquid %}
+
+<p class="project-meta">University of Washington · Research Assistant · 2025</p>
+
 ## Research Question
 
 How can machine-learning systems classify causes of death reliably when labels are highly imbalanced, clinical information is heterogeneous, and the available datasets differ in structure and diagnostic detail?

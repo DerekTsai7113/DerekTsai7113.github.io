@@ -8,6 +8,10 @@ category: research
 related_publications: false
 ---
 
+{% include academic_style.liquid %}
+
+<p class="project-meta">Academia Sinica · Ongoing Research Collaboration</p>
+
 ## Research Question
 
 Can speech-related information be decoded reliably from fMRI across different acoustic conditions, including noisy and speech-enhanced listening, and which brain regions provide the most useful information for that decoding?
