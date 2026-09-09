@@ -11,7 +11,12 @@ html[data-theme="dark"] {
 body,
 .navbar,
 .post {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif !important;
 }
 
 .post-title {
