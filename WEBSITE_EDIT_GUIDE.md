@@ -1,209 +1,252 @@
 # Derek Tsai Academic Website — Edit Guide
 
-This file is the working checklist for turning the current al-folio site into a PhD-application research portfolio.
+This file is the working checklist for the PhD-application research portfolio.
 
-## Current audit — 2026-09-03
+## Current status — 2026-09-09
 
-The basic site setup and cleanup are now complete enough to pause safely and continue later.
+The basic website structure is now essentially complete.
 
 ### Completed
 
-- GitHub Pages is publishing from `gh-pages / (root)`.
+- GitHub Pages publishes from `gh-pages / (root)`.
 - Source edits are made on the `main` branch.
-- Homepage identity is customized for **Te-Hsun (Derek) Tsai**.
-- Homepage subtitle is **M.S. in Statistics, University of Washington**.
-- Homepage biography and research-interest sections are customized.
-- Starter announcements, latest posts, and selected-paper blocks are disabled.
-- Main navigation has been simplified to the useful pages only.
-- Starter pages such as blog, teaching, people, submenus, publications, and repositories are hidden with `nav: false`.
-- Research page title and description are customized.
-- Profile photo is now configured as:
+- Homepage identity, biography, research interests, and contact links are customized.
+- The homepage includes a compact **Methods & Expertise** section.
+- The profile photo is displayed on the right and intentionally kept relatively small so the research text remains the visual focus.
+- Search / `Ctrl+K` has been disabled because it added little value for a small academic portfolio.
+- Navigation is intentionally minimal: **About / Research / CV**.
+- The CV link opens the current PDF directly rather than adding an unnecessary intermediate page.
+- The site defaults to light mode for new visitors while preserving the theme toggle.
+- Starter project pages have been removed.
+- Four real Research pages now exist:
+  1. **Speech–Brain Representation Alignment**
+  2. **fMRI Cross-Condition Speech Decoding**
+  3. **Cause-of-Death Modeling**
+  4. **Adaptive Conformal Prediction for Chaotic Time Series**
 
-  `assets/img/Photo.png`
-
-  and `_pages/about.md` points to `Photo.png`.
-
-- Social/contact links have been cleaned. `_data/socials.yml` now contains only:
-  - Email: `testat0929@gmail.com`
-  - GitHub: `DerekTsai7113`
-  - LinkedIn: `te-hsun-tsai`
-- Template social links such as InspireHEP, the sample Google Scholar profile, RSS, example CV link, and Albert Einstein custom link have been removed.
-- CV is intentionally hidden for now with `nav: false` because the final PhD CV will be prepared after the school list and manuscript/publication status are clearer.
-
-### Current site state
-
-The homepage is now a usable first-pass academic profile. The largest unfinished part is the **Research** section: the page exists, but the real detailed project cards/pages still need to be created.
-
-The current CV file still contains template content internally, but this is acceptable for now because the page is hidden from navigation. Do not spend time polishing it until the final PhD CV is ready.
-
-### Important research-organization decision
-
-There are **two distinct Academia Sinica research lines**, and they should not be merged simply because they were done at the same institution.
-
-1. **Speech–Brain Representation Alignment** — the main internship project.
-   - Focus: EEG / speech–brain representation alignment, pretrained speech/language representations, neural encoding/evaluation, and clean-versus-noisy speech analyses.
-   - Treat this as the primary Academia Sinica internship project on the website and CV.
-
-2. **fMRI Cross-Condition Speech Decoding / ICASSP 2027 Collaboration** — a separate collaboration with another lab member.
-   - Keep the public-facing title provisional until the paper title is finalized.
-   - Current research setting: fMRI Pre/Post/Clean decoding, 21 participants, grouped stimulus folds, left-hemisphere ROI analysis, and sequence/tabular model comparisons including S5, TabM, and TabPFN.
-   - The collaboration is targeting **ICASSP 2027**, with a working internal draft deadline of **2026-09-16**.
-   - A publication/manuscript output is **not guaranteed yet**; whether this becomes a submitted paper depends on the final results.
-   - Do not state an authorship position publicly until the author list/order is actually settled.
-
-For the website, it is appropriate to create two separate Research project pages because the research questions, data, methods, and collaboration structures are different.
-
-For the CV, keep one **Research Intern — Academia Sinica** experience block unless there is a strong reason to split employment entries; the two projects can be separated as project-level bullets/subheadings inside that experience.
+At this point, the main unfinished work is not site structure. The remaining task is to make the **Research pages substantially stronger and more informative than the CV**.
 
 ---
 
-## Next tasks — do these later
+## Main next task — strengthen the Research portfolio
 
-### Priority 1 — Build the Research portfolio
+The website should not simply repeat CV bullets. The CV is the compressed record; the website should explain the research story, technical choices, personal contribution, and what was learned.
 
-Edit:
+For each major project, aim to answer questions that a faculty reader may have after seeing the CV:
 
-`_pages/projects.md`
+- What was the actual research problem?
+- Why was the problem technically or scientifically difficult?
+- What data and evaluation setup were used?
+- What methods were compared, and why?
+- What part of the work did Derek personally implement or analyze?
+- What did the results show?
+- What limitations remained?
+- How did the project influence later research interests or possible future work?
 
-Individual project source files live in:
+Avoid copying CV bullets sentence-for-sentence. It is fine for the underlying facts to match the CV, but the website should add context and technical explanation.
 
-`_projects/`
+### Recommended project-page structure
 
-Replace the starter/example project files with real research projects.
-
-Recommended order:
-
-1. **Speech–Brain Representation Alignment** — Academia Sinica
-2. **fMRI Cross-Condition Speech Decoding** — Academia Sinica collaboration; ICASSP 2027 target, output contingent on final results
-3. **Cause-of-Death Modeling** — University of Washington
-4. **Adaptive Conformal Prediction for Chaotic Time Series** — University of Washington
-5. **Causal Inference for E-cigarette Use and Respiratory Disease** — optional secondary project
-
-The second Academia Sinica title above is a **working website label**, not a claimed paper title. Replace it with the real title only after the collaboration finalizes the manuscript title.
-
-Each major project page should follow roughly this structure:
+Use a structure close to this where appropriate:
 
 ```markdown
 ## Research Question
 
-## Why It Matters
+## Motivation / Why It Matters
+
+## Data and Experimental Setup
 
 ## My Contribution
 
 ## Methods
 
-## Results
+## Results and Interpretation
 
-## What I Learned / Future Directions
+## Limitations / Open Questions
+
+## Future Directions
 ```
 
-Keep **My Contribution** explicit so a faculty reader can quickly distinguish the overall project from the work personally performed.
+Not every page needs every heading. The goal is clarity, not filling a template.
 
-For the ICASSP collaboration in particular, clearly distinguish the overall team project from Derek's own contribution. Do not imply sole ownership of the project or a finalized publication before submission.
+### Length target
 
-For project cards or homepage summaries, keep descriptions to about 2–3 sentences. Put technical detail, figures, and extended explanations inside the individual project page.
+Each major page should be readable in roughly 3–6 minutes without figures, and around 5–10 minutes once figures are added.
 
-### Priority 2 — Decide homepage Featured Research after the ICASSP result is clearer
-
-The Research page can contain both Academia Sinica projects, but the homepage does not need to show every project.
-
-For now, the likely featured set is:
-
-1. **Speech–Brain Representation Alignment**
-2. **Adaptive Conformal Prediction for Chaotic Time Series** or **Cause-of-Death Modeling**
-3. One additional strongest project
-
-If the fMRI collaboration produces a credible ICASSP 2027 submission, it will likely deserve a Featured Research slot. If it does not reach submission, it can still remain on the Research page as a substantive collaboration, but it does not need to displace a stronger completed project on the homepage.
-
-### Priority 3 — Add figures to major projects
-
-For each major project, use only the most informative 1–2 figures rather than turning the site into a full report.
-
-Good figure types include:
-
-- a simple method/pipeline diagram
-- one representative result figure
-- one summary table or comparison if it genuinely helps
-
-Store project images under `assets/img/` or a clearly named subfolder.
-
-For the fMRI collaboration, good candidates later would be one architecture/pipeline figure and one representative ROI/model result figure, but only after the final analysis and paper framing stabilize.
-
-### Priority 4 — Add the final PhD CV
-
-Wait until the school list and manuscript/publication status are settled.
-
-When ready:
-
-1. Export the final PhD CV PDF.
-2. Upload it to:
-
-   `assets/pdf/Derek_Tsai_CV.pdf`
-
-3. Edit `_pages/cv.md` so the PDF link points to:
-
-```yaml
-cv_pdf: /assets/pdf/Derek_Tsai_CV.pdf
-```
-
-4. Replace the remaining starter description/content on the CV page.
-5. Change:
-
-```yaml
-nav: false
-```
-
-to:
-
-```yaml
-nav: true
-```
-
-6. Add the website URL to the CV header:
-
-   `DerekTsai7113.github.io`
-
-There is no need to use the template's RenderCV system if a normal PDF link is simpler.
-
-### Priority 5 — Optional 30–60 second introduction video
-
-Add this only after the written site is stable.
-
-Suggested content:
-
-- name and current degree
-- main research interests
-- one sentence about current/recent Academia Sinica work
-- one sentence about the kind of PhD research being sought
-
-The goal is clear communication and natural spoken English, not high production value.
-
-### Priority 6 — Publications / manuscript section, only if applicable
-
-If there is a real manuscript, submission, preprint, or publication worth listing later, then enable the Publications page and add it accurately.
-
-The most likely near-term candidate is the separate **fMRI / ICASSP 2027 collaboration**, but its status is still contingent on the final results. Until a manuscript is actually submitted or made public, keep the Publications page hidden and describe the work only as an ongoing research collaboration/project.
-
-Once the submission status is real, update all of the following together:
-
-- exact paper title
-- exact author list and author order
-- exact venue
-- accurate status such as `Submitted`, `Under Review`, `Accepted`, or `Preprint`
-- project page link to the manuscript/preprint only if it is publicly accessible
-
-Do not create a Publications section merely to fill space, and do not label work as `Submitted` before submission actually occurs.
+Good project pages can be more detailed than the CV, but should still be much shorter and easier to scan than a paper or technical report.
 
 ---
 
-## Goal of the website
+## Priority order for strengthening the current projects
 
-Use the site as a two-layer research portfolio:
+### 1. Speech–Brain Representation Alignment
 
-1. **Homepage: 2–3 minute overview** — who I am, research interests, and major projects.
-2. **Project pages: 5–10 minute detail** — research question, methods, personal contribution, results, figures, and future direction.
+This should remain the primary Academia Sinica project because it is the main internship line and connects directly to current interests in representation learning, neural data, and statistical modeling.
 
-The site does **not** need teaching, lab-member, blog, or publication sections unless there is real content to show.
+The detailed page should eventually explain more than the CV about:
+
+- WavLM / GPT-2 representations and why layer-wise analysis is useful
+- neural encoding setup
+- EEG versus fMRI roles
+- cross-validation and aggregation choices
+- clean versus noisy speech comparisons
+- noise-ceiling normalization and interpretation
+- what the analysis suggests about model–brain representation alignment
+- limitations and possible follow-up directions
+
+### 2. fMRI Cross-Condition Speech Decoding
+
+Keep this separate from the main internship project because the research question, modeling pipeline, and collaboration structure are different.
+
+The page should clearly separate the overall team project from Derek's contribution. It can later explain:
+
+- the decoding task and listening conditions
+- ROI-level analysis
+- model-comparison logic
+- Wave-4 S5 / classical baselines at an appropriate level of detail
+- statistical testing and reproducibility choices
+- what cross-condition behavior means scientifically
+
+Do not claim a finalized paper title, authorship order, or submission status before those facts are actually settled.
+
+### 3. Cause-of-Death Modeling
+
+This page can provide more context than the CV about:
+
+- verbal-autopsy / clinical prediction setting
+- long-tailed and hierarchical labels
+- heterogeneous features
+- why leakage-safe evaluation mattered
+- modeling and validation decisions
+- error analysis and practical limitations
+
+### 4. Adaptive Conformal Prediction for Chaotic Time Series
+
+This is particularly useful for Statistics / ML applications because it demonstrates uncertainty quantification rather than only applied biomedical modeling.
+
+The website can explain:
+
+- why ordinary split conformal prediction can lose coverage in iterative chaotic forecasting
+- closed-loop versus one-step prediction
+- rolling-window and EWMA calibration ideas
+- coverage–width tradeoffs
+- failure modes and future directions
+
+---
+
+## NCTS experience — secondary Research item
+
+The **National Center for Theoretical Sciences (NCTS)** experience is worth keeping in the CV and is also a reasonable addition to the Research page, but it should not displace the four stronger current projects on the homepage.
+
+Current project identity:
+
+**Forecasting & Data Assimilation for Chaotic Systems** — NCTS, 2024
+
+Core content that could justify a concise Research entry:
+
+- Lorenz-63 nonlinear dynamics
+- hybrid LSTM / ARIMA forecasting
+- Kalman-filter-based data assimilation
+- noisy observations and model misspecification
+- 200+ controlled experiments across architecture, data size, forecast horizon, observation noise, and model specification
+- robustness / RMSE comparisons
+
+Recommended treatment:
+
+- Keep it **off the homepage Featured Research** for now.
+- Add it later as a fifth Research item or an **Earlier Research** entry if the page benefits from more breadth.
+- A shorter page is sufficient unless there are strong figures or technical results worth showing.
+
+This project is more valuable on the website than a generic skills section because it demonstrates actual time-series / dynamical-systems research experience.
+
+---
+
+## Research figures — discuss later
+
+Do not add figures merely to make the pages look fuller.
+
+For each major project, eventually choose only 1–2 figures that materially help a reader understand either the method or the result.
+
+Strong candidates are:
+
+- one clear method / pipeline diagram
+- one representative result figure
+- one compact comparison table when visual comparison is genuinely useful
+
+For the fMRI collaboration in particular, likely candidates are one architecture / pipeline figure and one representative decoding-result figure after the analysis and manuscript framing stabilize.
+
+Images should be stored under `assets/img/` or a clearly named project subfolder.
+
+---
+
+## Homepage policy
+
+The homepage should remain a short academic overview, not a duplicate CV.
+
+Keep:
+
+- name and degree
+- short research biography
+- Research Interests
+- Methods & Expertise
+- 3 Featured Research links
+- profile photo
+- Email / GitHub / LinkedIn
+
+Do not add full Education, Coursework, Experience, or programming-language sections unless they become necessary later. Those details already belong in the CV.
+
+Current Featured Research set:
+
+1. **Speech–Brain Representation Alignment**
+2. **Cause-of-Death Modeling**
+3. **Adaptive Conformal Prediction for Chaotic Time Series**
+
+The fMRI collaboration can replace one of these later if it reaches a strong finalized / submitted form.
+
+---
+
+## CV policy
+
+Current CV PDF:
+
+`assets/pdf/Derek_Tsai_CV.pdf`
+
+Navigation should link directly to the PDF so a faculty reader does not need an extra click.
+
+The website and CV should remain complementary:
+
+- **CV:** concise facts, dates, roles, and bullets
+- **Website:** research motivation, technical context, personal contribution, interpretation, limitations, and figures
+
+When the CV changes, replace the PDF at the same path so the website link does not need to change.
+
+---
+
+## Publications / manuscript status
+
+Only enable a Publications section when there is something real to list: a submitted manuscript, public preprint, accepted paper, or publication.
+
+If the fMRI collaboration becomes a real submission, update the website only after the following are settled:
+
+- exact paper title
+- exact author list and order
+- exact venue
+- accurate status such as `Submitted`, `Under Review`, `Accepted`, or `Preprint`
+
+Until then, describe it only as an ongoing research collaboration / project.
+
+---
+
+## Optional later additions
+
+These are not priorities now:
+
+- 30–60 second introduction video
+- Publications page
+- polished public repository links
+- additional secondary projects such as the causal-inference course project
+
+Do not spend time on these before the main Research pages are strong.
 
 ---
 
@@ -213,58 +256,41 @@ The site does **not** need teaching, lab-member, blog, or publication sections u
 
 `_pages/about.md`
 
-Controls:
-
-- homepage bio
-- subtitle
-- research interests
-- profile photo
-- social links display
-- Featured Research text
+Controls the homepage biography, research interests, Methods & Expertise, profile photo, social display, and Featured Research links.
 
 Current profile image:
 
 `assets/img/Photo.png`
 
-### Research page
+### Research index
 
 `_pages/projects.md`
 
-Controls the overall Research page.
-
-Detailed projects:
+### Detailed Research pages
 
 `_projects/`
 
 ### CV
 
-`_pages/cv.md`
+`assets/pdf/Derek_Tsai_CV.pdf`
 
-Currently hidden intentionally. Update only when the final application CV is ready.
+`_pages/cv.md` exists mainly as a compatibility redirect; navigation now opens the PDF directly.
 
-### Social/contact links
+### Social / contact links
 
 `_data/socials.yml`
-
-Current intended content:
-
-```yaml
-# Social and contact links
-
-email: testat0929@gmail.com
-github_username: DerekTsai7113
-linkedin_username: te-hsun-tsai
-```
 
 ### Site-wide settings
 
 `_config.yml`
 
-Contains site name, URL, description, theme behavior, search settings, and other global configuration.
+### Search disabling
+
+`_plugins/disable_search.rb`
 
 ---
 
-## Current homepage research identity
+## Current research identity
 
 ### Statistical & Reliable Machine Learning
 
@@ -278,41 +304,18 @@ EEG/fMRI, neural encoding, clinical prediction, multimodal biomedical data.
 
 Pretrained speech/language models, representation analysis, multimodal learning.
 
-This is intentionally broad enough to support Statistics, Statistical ML, Data Science, and related biomedical/computational PhD applications. Refine it later only if the final application narrative becomes substantially narrower.
+This remains broad enough to support Statistics, Statistical ML, Data Science, and related biomedical / computational PhD applications.
 
 ---
 
-## Navigation philosophy
+## Goal of the website
 
-Keep the site small and intentional.
+Use the site as a two-layer research portfolio:
 
-Current useful navigation:
+1. **Homepage: roughly 1–3 minute overview** — who I am, research interests, and strongest projects.
+2. **Project pages: roughly 5–10 minute detail** — research question, motivation, methods, contribution, results, limitations, figures, and future direction.
 
-- **About / Home**
-- **Research**
-- **CV** — hidden until final CV is ready
-
-Optional later:
-
-- **Publications** — only when there is genuine content
-- **Repositories** — only if public repositories are polished and useful to faculty readers
-
-Do **not** invent a Teaching section. No teaching experience is completely fine for a PhD applicant.
-
----
-
-## Search / demo-content cleanup — optional later
-
-The al-folio starter contains demo posts and other example assets internally. Even when their navigation pages are hidden, some template/demo material may remain in search or the repository.
-
-This is not urgent while the site is still private/work-in-progress.
-
-Before widely sharing the site, either:
-
-- remove unused demo posts/content, or
-- disable search in `_config.yml` if search adds no value.
-
-Do not delete template files blindly while the site is working; clean them gradually after the main Research pages are finished.
+The site does not need to reproduce every line of the CV.
 
 ---
 
@@ -320,7 +323,7 @@ Do not delete template files blindly while the site is working; clean them gradu
 
 Always edit source files on the `main` branch.
 
-The al-folio GitHub Action builds the site and writes the generated output to the `gh-pages` branch. GitHub Pages publishes from:
+The GitHub Action builds the site and writes generated output to `gh-pages`. GitHub Pages publishes from:
 
 `gh-pages / (root)`
 
@@ -329,63 +332,21 @@ After committing a change:
 1. Open **Actions**.
 2. Check **Deploy site**.
 3. Wait for it to turn green.
-4. Refresh:
-
-   `https://DerekTsai7113.github.io`
+4. Refresh `https://DerekTsai7113.github.io`.
 
 Do not manually edit `gh-pages`.
 
-If **Deploy site** fails, inspect that workflow first. Formatting/test workflows such as Prettier are secondary; the deployment workflow is the key indicator for whether the website itself updated successfully.
+A failed Prettier workflow usually means code-formatting differences rather than a broken public site. The **Deploy site** workflow is the main indicator of whether the website itself updated successfully.
 
 ---
 
-## Where to find this website again
+## Immediate next-session checklist
 
-The entire website is this GitHub repository:
+1. Strengthen the **Speech–Brain Representation Alignment** page.
+2. Strengthen the **fMRI Cross-Condition Speech Decoding** page.
+3. Strengthen the **Cause-of-Death Modeling** and **Adaptive Conformal Prediction** pages.
+4. Decide whether to add **NCTS — Forecasting & Data Assimilation for Chaotic Systems** as a fifth / Earlier Research item.
+5. Discuss and choose project figures only after the written explanations are solid.
+6. Re-check fMRI manuscript / submission wording after the collaboration status is finalized.
 
-`DerekTsai7113/DerekTsai7113.github.io`
-
-To find it after reopening GitHub:
-
-1. GitHub profile icon → **Your repositories**.
-2. Open **DerekTsai7113.github.io**.
-3. Confirm the branch is **main**.
-4. Edit files from there.
-
-The public website is:
-
-`https://DerekTsai7113.github.io`
-
-The public website is the rendered result; the GitHub repository is where edits are made.
-
----
-
-## Where to find this guide again
-
-This file is in the **root of the repository**:
-
-`WEBSITE_EDIT_GUIDE.md`
-
-Fastest method:
-
-1. Open the repository on the **Code** tab.
-2. Confirm branch = `main`.
-3. Click **Go to file** or press `t`.
-4. Search `WEBSITE_EDIT_GUIDE.md`.
-
----
-
-## Minimum viable PhD website
-
-Before adding the URL to applications or outreach emails, the site should have:
-
-- a clean homepage — **done**
-- a clear research identity — **done**
-- professional profile photo — **done**
-- correct Email / GitHub / LinkedIn links — **done**
-- 3 strong research/project summaries — **remaining**
-- detailed pages for the major projects — **remaining**
-- a downloadable final CV — **wait until final CV is ready**
-- optional short video — **later**
-
-Everything else is optional.
+Everything outside this list is currently lower priority.
