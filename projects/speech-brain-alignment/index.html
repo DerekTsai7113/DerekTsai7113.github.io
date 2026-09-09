@@ -4,13 +4,119 @@
       localStorage.setItem("theme", "light");
     }
   } catch (e) {}
-</script> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Speech–Brain Representation Alignment | Derek Tsai </title> <meta name="author" content="Te-Hsun (Derek) Tsai"> <meta name="description" content="Neural encoding and representation analysis across EEG and fMRI using pretrained speech and language models."> <meta name="keywords" content="statistics, machine learning, biomedical data science, computational neuroscience, reliable AI"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+</script> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Speech–Brain Representation Alignment | Derek Tsai </title> <meta name="author" content="Te-Hsun (Derek) Tsai"> <meta name="description" content="Neural encoding and layer-wise representation analysis across EEG and fMRI using pretrained speech and language models."> <meta name="keywords" content="statistics, machine learning, biomedical data science, computational neuroscience, reliable AI"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
   :root {
     --max-content-width: 930px;
   }
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://derektsai7113.github.io/projects/speech-brain-alignment/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Derek Tsai </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">research <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/assets/pdf/Derek_Tsai_CV.pdf" target="_blank" rel="noopener">CV </a> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Speech–Brain Representation Alignment</h1> <p class="post-description">Neural encoding and representation analysis across EEG and fMRI using pretrained speech and language models.</p> </header> <article> <h2 id="research-question">Research Question</h2> <p>How do internal representations learned by pretrained speech and language models correspond to human neural responses during speech perception, and how does that relationship change across recording modalities and listening conditions?</p> <h2 id="why-it-matters">Why It Matters</h2> <p>Pretrained models contain rich hierarchical representations, but strong predictive performance alone does not tell us which model layers or features best correspond to biological information processing. Comparing model representations with EEG and fMRI can help characterize what information is shared between artificial and neural representations.</p> <h2 id="my-contribution">My Contribution</h2> <p>At Academia Sinica, I developed and evaluated neural encoding pipelines for studying speech–brain representation alignment. My work focuses on reproducible layer-wise analyses and on comparing representation quality across neural modalities and acoustic conditions.</p> <h2 id="methods">Methods</h2> <ul> <li>Layer-wise representations from pretrained models including <strong>WavLM</strong> and <strong>GPT-2</strong> </li> <li>Ridge-regression neural encoding models</li> <li>Leave-run-out cross-validation</li> <li>Noise-ceiling normalization</li> <li>Subject- and channel-level aggregation</li> <li>Clean-versus-noisy speech comparisons</li> <li>Complementary analyses across <strong>EEG</strong> and <strong>fMRI</strong> </li> </ul> <h2 id="current-directions">Current Directions</h2> <p>I am interested in moving beyond passive representation comparison toward methods that use neural encoding performance to guide representation selection or adaptation. A related direction is to investigate how EEG’s temporal resolution and fMRI’s spatial resolution can provide complementary signals for multimodal representation learning.</p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Te-Hsun (Derek) Tsai. </div> </footer> <script>
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Derek Tsai </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">Research <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/assets/pdf/Derek_Tsai_CV.pdf" target="_blank" rel="noopener">CV </a> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Speech–Brain Representation Alignment</h1> <p class="post-description">Neural encoding and layer-wise representation analysis across EEG and fMRI using pretrained speech and language models.</p> </header> <article> <style>
+  :root {
+    --global-theme-color: #4b2e83;
+    --global-hover-color: #3b2468;
+  }
+
+  html[data-theme="dark"] {
+    --global-theme-color: #b9a8dc;
+    --global-hover-color: #d1c5ea;
+  }
+
+  body,
+  .navbar,
+  .post {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  }
+
+  .post-title {
+    font-weight: 650;
+    letter-spacing: -0.025em;
+  }
+
+  .post-description {
+    max-width: 760px;
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .post article {
+    max-width: 800px;
+  }
+
+  .post article p,
+  .post article li {
+    line-height: 1.72;
+  }
+
+  .post article h2 {
+    margin-top: 2.2rem;
+    margin-bottom: 0.65rem;
+    font-size: 1.35rem;
+    font-weight: 650;
+    letter-spacing: -0.015em;
+  }
+
+  .post article h3 {
+    margin-top: 1.6rem;
+    font-size: 1.1rem;
+    font-weight: 650;
+  }
+
+  .post article a {
+    text-underline-offset: 0.14em;
+    text-decoration-thickness: 0.06em;
+  }
+
+  .research-entry {
+    padding: 1.45rem 0 1.65rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .research-entry:first-of-type {
+    padding-top: 0.8rem;
+  }
+
+  .research-entry h2 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+  }
+
+  .research-entry h2 a {
+    color: var(--global-text-color);
+    text-decoration: none;
+  }
+
+  .research-entry h2 a:hover {
+    color: var(--global-theme-color);
+  }
+
+  .research-meta,
+  .project-meta {
+    margin-bottom: 0.7rem;
+    color: var(--global-text-color-light) !important;
+    font-size: 0.9rem;
+  }
+
+  .research-read-more {
+    font-size: 0.92rem;
+  }
+
+  @media (min-width: 576px) {
+    .profile {
+      width: 20% !important;
+    }
+
+    .profile.float-right {
+      margin-left: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .post article h2 {
+      font-size: 1.25rem;
+    }
+  }
+</style> <p class="project-meta">Academia Sinica · Research Intern · 2026</p> <p>I use neural encoding models to study how internal representations from pretrained speech and language models correspond to human neural responses during speech perception. Rather than treating each model as a single representation, I compare intermediate layers and ask how alignment changes across neural modalities and listening conditions.</p> <h2 id="research-question">Research Question</h2> <p>Which pretrained representations best explain neural responses to speech, at which model layers, and how stable are those relationships across EEG, fMRI, and clean-versus-noisy listening conditions?</p> <h2 id="motivation">Motivation</h2> <p>Modern speech and language models learn rich hierarchical representations, but predictive performance on machine-learning benchmarks does not tell us whether those representations capture information that resembles biological speech processing. Neural encoding provides a direct way to test this by measuring how well model features predict recorded brain responses.</p> <p>EEG and fMRI also provide complementary views of the problem: EEG offers fine temporal resolution, while fMRI provides substantially richer spatial information. Comparing both modalities helps separate model–brain alignment that is specific to one measurement setting from patterns that may be more general.</p> <h2 id="data-and-experimental-setup">Data and Experimental Setup</h2> <p>The analysis combines neural responses recorded during speech perception with layer-wise representations extracted from pretrained models. I compare speech-focused encoders and language-model representations rather than relying on a single architecture.</p> <p>Key components include:</p> <ul> <li> <strong>Pretrained representations:</strong> WavLM, Whisper, HuBERT, wav2vec 2.0, and GPT-2, analyzed layer by layer</li> <li> <strong>Neural modalities:</strong> complementary analyses using EEG and fMRI</li> <li> <strong>Listening conditions:</strong> clean and noisy speech</li> <li> <strong>Encoding model:</strong> ridge regression from model representations to neural responses</li> <li> <strong>Validation:</strong> leave-run-out cross-validation to evaluate out-of-run generalization</li> <li> <strong>Evaluation:</strong> raw and noise-ceiling-normalized encoding performance with subject- and channel-level aggregation</li> </ul> <h2 id="my-contribution">My Contribution</h2> <p>At Academia Sinica, I developed and evaluated the analysis pipeline for speech–brain representation alignment. My work includes extracting and organizing layer-wise representations, implementing reproducible neural-encoding evaluations, comparing models and layers across conditions, and building aggregation and statistical-analysis procedures for EEG and fMRI results.</p> <p>A central part of the project is making model comparisons interpretable: the goal is not only to identify the strongest score, but also to understand whether differences are consistent across layers, participants, channels or regions, and acoustic conditions.</p> <h2 id="methods">Methods</h2> <ul> <li> <strong>Layer-wise representation analysis.</strong> Intermediate representations are evaluated separately so that model depth can be related to neural predictivity instead of collapsing each model into a single feature set.</li> <li> <strong>Regularized neural encoding.</strong> Ridge regression provides a simple, controlled mapping from high-dimensional model features to neural responses.</li> <li> <strong>Cross-validated evaluation.</strong> Leave-run-out validation reduces dependence on any particular run and provides a cleaner estimate of generalization.</li> <li> <strong>Noise-ceiling normalization.</strong> Encoding performance is interpreted relative to the reliability of the measured neural signal, which is especially important when comparing across subjects, channels, or modalities.</li> <li> <strong>Condition and modality comparisons.</strong> Clean-versus-noisy speech and EEG-versus-fMRI analyses are used to test whether observed alignment is robust to changes in acoustic input and measurement modality.</li> </ul> <h2 id="current-directions">Current Directions</h2> <p>I am interested in moving beyond passive representation comparison toward methods that use neural encoding performance to guide representation selection or adaptation. Another direction is to study how the temporal information available in EEG and the spatial information available in fMRI can be combined more systematically for multimodal representation learning.</p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Te-Hsun (Derek) Tsai. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
