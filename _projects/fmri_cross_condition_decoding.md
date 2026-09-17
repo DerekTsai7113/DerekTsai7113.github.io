@@ -89,4 +89,4 @@ The dataset remains small relative to the dimensionality of fMRI, and the analys
 
 **Te-Hsun Tsai, Francis Pingfan Chien, Vincent Cheng-Sheng Li, et al.**  
 “Decoding Prior-Induced Speech States from fMRI under Identical Acoustics.”  
-*Submitted to IEEE ICASSP 2027*, 2026.
+_Submitted to IEEE ICASSP 2027_, 2026.
