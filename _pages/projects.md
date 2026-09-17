@@ -40,18 +40,6 @@ I study how hidden-state representations from pretrained speech encoders and lan
 
 <section class="research-entry" markdown="1">
 
-## [Adaptive Conformal Prediction for Chaotic Time Series](/projects/adaptive-conformal-prediction/)
-
-<p class="research-meta">University of Washington · Graduate Course Project</p>
-
-I investigated why standard split conformal prediction can lose coverage in closed-loop chaotic forecasting and evaluated adaptive calibration strategies based on rolling windows and exponentially weighted updates.
-
-[Read project →](/projects/adaptive-conformal-prediction/){: .research-read-more }
-
-</section>
-
-<section class="research-entry" markdown="1">
-
 ## [Cause-of-Death Modeling](/projects/cause-of-death-modeling/)
 
 <p class="research-meta">University of Washington · Research Assistant · 2025</p>
@@ -59,5 +47,17 @@ I investigated why standard split conformal prediction can lose coverage in clos
 I developed machine-learning pipelines for automated cause-of-death classification from heterogeneous verbal-autopsy and clinical data, focusing on hierarchical prediction, severe class imbalance, multimodal features, and leakage-safe evaluation.
 
 [Read project →](/projects/cause-of-death-modeling/){: .research-read-more }
+
+</section>
+
+<section class="research-entry" markdown="1">
+
+## [Adaptive Conformal Prediction for Chaotic Time Series](/projects/adaptive-conformal-prediction/)
+
+<p class="research-meta">University of Washington · Graduate Course Project</p>
+
+I investigated why standard split conformal prediction can lose coverage in closed-loop chaotic forecasting and evaluated adaptive calibration strategies based on rolling windows and exponentially weighted updates.
+
+[Read project →](/projects/adaptive-conformal-prediction/){: .research-read-more }
 
 </section>
