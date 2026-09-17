@@ -40,11 +40,13 @@ body,
 }
 
 .post article h2 {
-  margin-top: 2.2rem;
-  margin-bottom: 0.65rem;
-  font-size: 1.35rem;
-  font-weight: 650;
-  letter-spacing: -0.015em;
+  margin-top: 2.55rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.42rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .post article h3 {
@@ -105,6 +107,7 @@ body,
 
 @media (max-width: 575.98px) {
   .post article h2 {
-    font-size: 1.25rem;
+    margin-top: 2.1rem;
+    font-size: 1.35rem;
   }
 }
