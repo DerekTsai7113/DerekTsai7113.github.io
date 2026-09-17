@@ -12,7 +12,7 @@ related_publications: false
 
 <p class="project-meta">Academia Sinica · Research Internship · 2026</p>
 
-I use neural-encoding models to study how hidden-state representations from pretrained speech encoders and language models correspond to human neural responses during speech perception. Rather than treating each model as a single representation, I compare intermediate layers and ask how alignment changes across neural modalities, model families, and clean-versus-noisy listening conditions.
+During my research internship at Academia Sinica, I used neural-encoding models to study how hidden-state representations from pretrained speech encoders and language models correspond to human neural responses during speech perception. Rather than treating each model as a single representation, I compared intermediate layers and examined how alignment changed across neural modalities, model families, and clean-versus-noisy listening conditions.
 
 ## Research Question
 
@@ -26,9 +26,9 @@ EEG and fMRI offer complementary views of this problem: EEG emphasizes temporal 
 
 ## Data and Experimental Setup
 
-The analysis combines neural responses recorded during speech perception with layer-wise hidden-state representations extracted from pretrained models.
+The analysis combined neural responses recorded during speech perception with layer-wise hidden-state representations extracted from pretrained models.
 
-Current comparisons include:
+The comparisons included:
 
 - **Speech encoders:** WavLM, Wav2Vec2, and Whisper
 - **Language models:** GPT-2 and Phi-4
@@ -40,22 +40,22 @@ Current comparisons include:
 
 ## My Contribution
 
-At Academia Sinica, I developed and evaluated the analysis pipeline for speech–brain representation alignment. My work includes extracting and organizing hidden-state representations, implementing reproducible neural-encoding evaluations, comparing models and layers across conditions, and building aggregation and statistical-analysis procedures for EEG and fMRI results.
+At Academia Sinica, I developed and evaluated the analysis pipeline for speech–brain representation alignment. My work included extracting and organizing hidden-state representations, implementing reproducible neural-encoding evaluations, comparing models and layers across conditions, and building aggregation and statistical-analysis procedures for EEG and fMRI results.
 
-A central goal is to make model comparisons interpretable. Rather than relying on one aggregate score, I examine whether differences are stable across layers, participants, channels or neural subsets, and acoustic conditions.
+A central goal was to make model comparisons interpretable. Rather than relying on one aggregate score, I examined whether differences were stable across layers, participants, channels or neural subsets, and acoustic conditions.
 
 ## Methods
 
-- **Layer-wise representation analysis.** Intermediate hidden states are evaluated separately so that model depth can be related to neural predictivity instead of collapsing each model into a single feature set.
-- **Regularized neural encoding.** Ridge regression provides a controlled mapping from high-dimensional model representations to neural responses.
-- **Cross-validated evaluation.** Leave-run-out validation reduces dependence on any particular run and provides a cleaner estimate of generalization.
-- **Noise-ceiling normalization.** Encoding performance is interpreted relative to the reliability of the measured neural signal, which is especially important when comparing across subjects, channels, or modalities.
-- **Condition and neural-subset comparisons.** Clean-versus-noisy speech and multiple channel groupings are used to test whether observed alignment patterns are robust across analysis settings.
+- **Layer-wise representation analysis.** Intermediate hidden states were evaluated separately so that model depth could be related to neural predictivity instead of collapsing each model into a single feature set.
+- **Regularized neural encoding.** Ridge regression provided a controlled mapping from high-dimensional model representations to neural responses.
+- **Cross-validated evaluation.** Leave-run-out validation reduced dependence on any particular run and provided a cleaner estimate of generalization.
+- **Noise-ceiling normalization.** Encoding performance was interpreted relative to the reliability of the measured neural signal, which is especially important when comparing across subjects, channels, or modalities.
+- **Condition and neural-subset comparisons.** Clean-versus-noisy speech and multiple channel groupings were used to test whether observed alignment patterns were robust across analysis settings.
 
-## Current Analysis
+## Analysis Completed During the Internship
 
-I have completed raw and noise-ceiling-normalized comparisons across model families and Clean/Noisy conditions, including all-channel, alpha-band, visual, and semantic neural subsets. The current results show that alignment patterns depend on model family, neural subset, and listening condition, so the project emphasizes robust comparison and interpretation rather than a single headline score.
+I completed raw and noise-ceiling-normalized comparisons across model families and Clean/Noisy conditions, including all-channel, alpha-band, visual, and semantic neural subsets. The results showed that alignment patterns depend on model family, neural subset, and listening condition, so the project emphasized robust comparison and interpretation rather than a single headline score.
 
-## Current Directions
+## Project Status
 
-I am interested in moving beyond passive representation comparison toward methods that use neural-encoding performance to guide representation selection or adaptation. Another direction is to combine the complementary temporal information available in EEG with the spatial information available in fMRI for multimodal representation learning.
+My active work on this project concluded with the end of my Academia Sinica internship in September 2026. Follow-up analyses may continue within the collaboration, while the contributions described on this page reflect the work I completed during the internship.
