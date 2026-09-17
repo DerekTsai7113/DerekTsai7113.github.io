@@ -23,7 +23,7 @@ latest_posts:
 
 <link rel="stylesheet" href="/assets/css/academic.css">
 
-I am an M.S. student in Statistics at the University of Washington. My research interests center on **reliable and generalizable machine learning**, with experience spanning **speech, language, neural data, and sequential or multimodal learning**. I am also interested in **LLM reliability**, particularly factuality, evaluation, and post-training questions.
+I am an M.S. student in Statistics at the University of Washington. My research interests center on reliable and generalizable machine learning, with experience spanning speech, language, neural data, and sequential or multimodal learning. I am also interested in LLM reliability, particularly factuality, evaluation, and post-training questions.
 
 My recent research at Academia Sinica includes decoding prior-induced speech states from fMRI under acoustically identical stimuli and studying how pretrained speech and language representations align with EEG and fMRI responses. More broadly, I am interested in machine-learning problems involving noise, limited samples, heterogeneous signals, and changing conditions, as well as evaluation methods that distinguish genuine generalization from leakage or condition-specific performance.
 
@@ -52,7 +52,7 @@ My recent research includes:
 
 - [**Decoding Prior-Induced Speech States from fMRI under Identical Acoustics**](/projects/fmri-cross-condition-decoding/) — Academia Sinica · ICASSP 2027 submission
 - [**Speech–Brain Representation Alignment**](/projects/speech-brain-alignment/) — Academia Sinica
-- [**Adaptive Conformal Prediction for Chaotic Time Series**](/projects/adaptive-conformal-prediction/) — University of Washington
+- [**Cause-of-Death Modeling**](/projects/cause-of-death-modeling/) — University of Washington · Research Assistant
 
 See the full [Research](/projects/) page for additional work and details.
 
