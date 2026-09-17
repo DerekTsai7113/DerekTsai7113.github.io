@@ -8,9 +8,9 @@ description: Curriculum Vitae
 ---
 
 <script>
-  window.location.replace("/assets/pdf/Derek_Tsai_CV.pdf");
+  window.location.replace("/assets/pdf/DerekTsai_CV.pdf");
 </script>
 
 <noscript>
-  <p><a href="/assets/pdf/Derek_Tsai_CV.pdf">Open CV (PDF)</a></p>
+  <p><a href="/assets/pdf/DerekTsai_CV.pdf">Open CV (PDF)</a></p>
 </noscript>
