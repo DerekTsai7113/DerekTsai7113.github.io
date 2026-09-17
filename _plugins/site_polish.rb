@@ -22,7 +22,7 @@ module SitePolish
     # Make the navbar CV item open the PDF directly instead of an intermediate page.
     html = html.gsub(
       /href=(['\"])\/cv\/\1/,
-      'href="/assets/pdf/Derek_Tsai_CV.pdf" target="_blank" rel="noopener"'
+      'href="/assets/pdf/DerekTsai_CV.pdf" target="_blank" rel="noopener"'
     )
 
     item.output = html
