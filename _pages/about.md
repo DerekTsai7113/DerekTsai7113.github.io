@@ -50,7 +50,7 @@ State-space models · Transformers · neural encoding · uncertainty quantificat
 ## Publications & Manuscripts
 
 **Decoding Prior-Induced Speech States from fMRI under Identical Acoustics**  
-Te-Hsun Tsai, Francis Pingfan Chien, Vincent Cheng-Sheng Li, et al. · *Submitted to IEEE ICASSP 2027*, 2026.
+Te-Hsun Tsai, Francis Pingfan Chien, Vincent Cheng-Sheng Li, et al. · _Submitted to IEEE ICASSP 2027_, 2026.
 
 ## Featured Research
 
