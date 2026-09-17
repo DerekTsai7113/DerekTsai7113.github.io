@@ -43,11 +43,7 @@ Factuality, hallucination evaluation, model evaluation, and post-training.
 **Sequential & Multimodal Machine Learning**  
 State-space models, temporal representations, multimodal signals, and learning from noisy or limited data.
 
-## Methods & Expertise
-
-State-space models · Transformers · neural encoding · uncertainty quantification · conformal prediction · EEG/fMRI analysis · pretrained representation analysis · time-series modeling
-
-## Publications & Manuscripts
+## Publications
 
 **Decoding Prior-Induced Speech States from fMRI under Identical Acoustics**  
 Te-Hsun Tsai, Francis Pingfan Chien, Vincent Cheng-Sheng Li, et al. · _Submitted to IEEE ICASSP 2027_, 2026.
@@ -61,3 +57,7 @@ My recent research includes:
 - [**Adaptive Conformal Prediction for Chaotic Time Series**](/projects/adaptive-conformal-prediction/) — University of Washington
 
 See the full [Research](/projects/) page for additional work and details.
+
+## Methods & Expertise
+
+State-space models · Transformers · neural encoding · uncertainty quantification · conformal prediction · EEG/fMRI analysis · pretrained representation analysis · time-series modeling
