@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /projects/
-description: Research in reliable and generalizable machine learning, speech and neural data, representation analysis, and uncertainty quantification.
+description: Public projects in reliable machine learning, uncertainty quantification, sequential modeling, and causal inference.
 nav: true
 nav_order: 1
 horizontal: false
@@ -10,54 +10,30 @@ horizontal: false
 
 <link rel="stylesheet" href="/assets/css/academic.css">
 
-My work uses machine-learning and statistical methods to study reliable prediction, representation learning, and generalization across speech, language, neural, biomedical, and sequential data. The projects below emphasize both methodological development and careful evaluation under noisy, limited-sample, or heterogeneous settings.
+My research interests center on reliable machine learning under distribution shift, uncertainty quantification, and sequential or multimodal learning. The projects below are work that I can discuss publicly in detail. Some ongoing and collaborative research is intentionally omitted from this site.
 
-The summaries here are intentionally brief. Each project page adds the research question, experimental setup, my contribution, methods, interpretation, and open questions beyond what can fit in a CV.
-
-<section class="research-entry" markdown="1">
-
-## [Decoding Prior-Induced Speech States from fMRI under Identical Acoustics](/projects/fmri-cross-condition-decoding/)
-
-<p class="research-meta">Academia Sinica · Submitted to IEEE ICASSP 2027</p>
-
-I developed and evaluated a state-space neural-decoding framework for distinguishing prior-induced perceptual states from fMRI responses when the acoustic waveform is held constant. The project combines controlled evaluation, cross-condition generalization, and behavioral validation.
-
-[Read project →](/projects/fmri-cross-condition-decoding/){: .research-read-more }
-
-</section>
-
-<section class="research-entry" markdown="1">
-
-## [Speech–Brain Representation Alignment](/projects/speech-brain-alignment/)
-
-<p class="research-meta">Academia Sinica · Research Internship · 2026</p>
-
-I study how hidden-state representations from pretrained speech encoders and language models align with EEG and fMRI responses across clean and noisy speech, with an emphasis on layer-wise neural encoding, noise-ceiling normalization, and robust model comparison.
-
-[Read project →](/projects/speech-brain-alignment/){: .research-read-more }
-
-</section>
-
-<section class="research-entry" markdown="1">
-
-## [Cause-of-Death Modeling](/projects/cause-of-death-modeling/)
-
-<p class="research-meta">University of Washington · Research Assistant · 2025</p>
-
-I developed machine-learning pipelines for automated cause-of-death classification from heterogeneous verbal-autopsy and clinical data, focusing on hierarchical prediction, severe class imbalance, multimodal features, and leakage-safe evaluation.
-
-[Read project →](/projects/cause-of-death-modeling/){: .research-read-more }
-
-</section>
+Each project page focuses on the research question, assumptions, methods, empirical findings, limitations, and what I learned from the analysis rather than reproducing a CV bullet list.
 
 <section class="research-entry" markdown="1">
 
 ## [Adaptive Conformal Prediction for Chaotic Time Series](/projects/adaptive-conformal-prediction/)
 
-<p class="research-meta">University of Washington · Graduate Course Project</p>
+<p class="research-meta">University of Washington · STAT 538 Graduate Course Project</p>
 
-I investigated why standard split conformal prediction can lose coverage in closed-loop chaotic forecasting and evaluated adaptive calibration strategies based on rolling windows and exponentially weighted updates.
+I studied how standard split conformal prediction behaves when an LSTM is deployed recursively on the Lorenz-63 system. Closed-loop rollout creates an endogenous distribution shift as prediction errors feed back into future inputs, causing coverage to deteriorate with forecast horizon. I then evaluated rolling-window and EWMA recalibration strategies that adapt prediction intervals to the evolving error distribution.
 
 [Read project →](/projects/adaptive-conformal-prediction/){: .research-read-more }
+
+</section>
+
+<section class="research-entry" markdown="1">
+
+## [Private Insurance and Flu Vaccination: A Causal Inference Study](/projects/insurance-flu-causal-inference/)
+
+<p class="research-meta">University of Washington · Graduate Course Project · Joint work with Yuhe Zhang</p>
+
+Using the 2018 Medical Expenditure Panel Survey, we studied the relationship between private insurance coverage and flu vaccination among adults. The analysis combines a DAG-based identification strategy with outcome regression, Hájek inverse-probability weighting, AIPW, covariate-balance diagnostics, bootstrap uncertainty, and sensitivity analysis for unmeasured confounding.
+
+[Read project →](/projects/insurance-flu-causal-inference/){: .research-read-more }
 
 </section>
