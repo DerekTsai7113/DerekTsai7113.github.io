@@ -14,7 +14,7 @@ related_publications: false
 
 > **Format note.** The course required the final report to use a NeurIPS-style paper template. This was a course project and was **not** a NeurIPS submission.
 
-[Project report (PDF)](/assets/pdf/adaptive_conformal_prediction.pdf) · [Code](https://github.com/DerekTsai7113/adaptive-conformal-lorenz63)
+<p class="project-links"><a href="/assets/pdf/adaptive_conformal_prediction.pdf">Project report (PDF)</a> · <a href="https://github.com/DerekTsai7113/adaptive-conformal-lorenz63" target="_blank" rel="noopener">Code</a></p>
 
 ## Research Question
 
