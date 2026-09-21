@@ -12,7 +12,7 @@ related_publications: false
 
 <p class="project-meta">University of Washington · Graduate Course Project · Joint work with Yuhe Zhang</p>
 
-[Project report (PDF)](/assets/pdf/insurance_flu_causal_inference.pdf)
+<p class="project-links"><a href="/assets/pdf/insurance_flu_causal_inference.pdf">Project report (PDF)</a> · <a href="https://github.com/DerekTsai7113/causal-inference-project" target="_blank" rel="noopener">Code</a></p>
 
 ## Research Question
 
