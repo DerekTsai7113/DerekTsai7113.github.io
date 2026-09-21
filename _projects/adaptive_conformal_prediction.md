@@ -38,9 +38,9 @@ The second setting creates a mismatch between calibration and deployment: as for
 
 ## Main Findings
 
-Split conformal prediction remained well calibrated at short horizons but deteriorated substantially under longer closed-loop rollouts. Empirical joint coverage fell from **0.951 at horizon 10** to **0.792 at horizon 50** and **0.723 at horizon 100**, despite a nominal target of 0.90. fileciteturn7file0L235-L242
+Split conformal prediction remained well calibrated at short horizons but deteriorated substantially under longer closed-loop rollouts. Empirical joint coverage fell from **0.951 at horizon 10** to **0.792 at horizon 50** and **0.723 at horizon 100**, despite a nominal target of 0.90.
 
-Adaptive calibration recovered much of the lost coverage by tracking the evolving residual distribution. At horizon 100, rolling-window and EWMA configurations achieved coverage around the nominal target, but with wider intervals, making the coverage–width trade-off explicit. fileciteturn7file0L257-L270
+Adaptive calibration recovered much of the lost coverage by tracking the evolving residual distribution. At horizon 100, rolling-window and EWMA configurations achieved coverage around the nominal target, but with wider intervals, making the coverage–width trade-off explicit.
 
 The project reinforced a broader lesson that matters to my current research interests: reliability guarantees that are valid under a calibration distribution can degrade once model deployment changes the data-generating process itself.
 
