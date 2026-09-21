@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Private Insurance and Flu Vaccination: A Causal Inference Study
+title: "Private Insurance and Flu Vaccination: A Causal Inference Study"
 permalink: /projects/insurance-flu-causal-inference/
 description: Observational causal inference with DAG-based adjustment, doubly robust estimation, diagnostics, and sensitivity analysis.
 importance: 5
