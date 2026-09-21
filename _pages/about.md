@@ -23,11 +23,17 @@ latest_posts:
 
 <link rel="stylesheet" href="/assets/css/academic.css">
 
-I am an M.S. student in Statistics at the University of Washington. My research interests lie in **reliable machine learning under distribution shift**, **uncertainty quantification and conformal prediction**, and **sequential or multimodal learning**. I am especially interested in what happens when deployment conditions differ from training or calibration conditions, and in methods that make model reliability measurable rather than assumed.
+I am an M.S. student in Statistics at the University of Washington. My research focuses on **reliable machine learning under distribution shift**, **uncertainty quantification and conformal prediction**, and **sequential or multimodal learning**.
 
-My background combines statistical learning with modern machine learning across neural, biomedical, time-series, and other heterogeneous data. I care about careful evaluation under nonstationarity, limited samples, imperfect overlap, and model misspecification. The detailed project pages describe research questions, methods, evaluation design, and my contributions; for collaborative or submitted work that is not yet public, detailed final results are intentionally omitted.
+My work sits at the intersection of statistical learning and modern machine learning. I am especially interested in how models behave when deployment conditions differ from training or calibration conditions, and in evaluation methods that make reliability measurable rather than assumed. I have worked with neural, biomedical, time-series, and other heterogeneous data under limited samples, nonstationarity, imperfect overlap, and model misspecification.
 
-## Research Interests
+## Submitted Manuscript
+
+**Decoding Prior-Induced Speech States from fMRI under Identical Acoustics**  
+Francis Pingfan Chien<sup>&#42;</sup>, Vincent Cheng-Sheng Li<sup>&#42;</sup>, **Te-Hsun Tsai<sup>&#42;</sup>**, et al. · <sup>&#42;</sup>Co-first authors (equal contribution).  
+_Submitted to IEEE ICASSP 2027._
+
+## Research Focus
 
 **Reliable Machine Learning under Distribution Shift**  
 Robustness, generalization, calibration, and evaluation when data-generating conditions change.
@@ -38,21 +44,18 @@ Distribution-free predictive inference, adaptive calibration, and coverage under
 **Sequential & Multimodal Learning**  
 Temporal and state-space modeling, heterogeneous signals, and learning from noisy or limited data.
 
-## Submitted Manuscript
-
-**Decoding Prior-Induced Speech States from fMRI under Identical Acoustics**  
-Francis Pingfan Chien<sup>&#42;</sup>, Vincent Cheng-Sheng Li<sup>&#42;</sup>, **Te-Hsun Tsai<sup>&#42;</sup>**, et al. · <sup>&#42;</sup>Co-first authors (equal contribution).  
-_Submitted to IEEE ICASSP 2027._
-
-## Featured Research & Projects
+## Selected Research Experience
 
 - [**Decoding Prior-Induced Speech States from fMRI under Identical Acoustics**](/projects/fmri-cross-condition-decoding/) — state-space decoding, cross-condition evaluation, and fMRI
 - [**Speech–Brain Representation Alignment**](/projects/speech-brain-alignment/) — layer-wise neural encoding across pretrained speech/language models, EEG, and fMRI
 - [**Cause-of-Death Modeling**](/projects/cause-of-death-modeling/) — hierarchical classification and leakage-safe evaluation for heterogeneous clinical data
-- [**Adaptive Conformal Prediction for Chaotic Time Series**](/projects/adaptive-conformal-prediction/) — UW course project on coverage degradation and adaptive calibration under closed-loop distribution shift
-- [**Private Insurance and Flu Vaccination: A Causal Inference Study**](/projects/insurance-flu-causal-inference/) — UW course project using DAG-based adjustment, doubly robust estimation, diagnostics, and sensitivity analysis
 
-See the full [Research](/projects/) page for methods, assumptions, findings where publicly shareable, limitations, and project details.
+## Selected Course Projects
+
+- [**Adaptive Conformal Prediction for Chaotic Time Series**](/projects/adaptive-conformal-prediction/) — coverage degradation and adaptive calibration under closed-loop distribution shift · [Report](/assets/pdf/adaptive_conformal_prediction.pdf) · [Code](https://github.com/DerekTsai7113/adaptive-conformal-lorenz63)
+- [**Private Insurance and Flu Vaccination: A Causal Inference Study**](/projects/insurance-flu-causal-inference/) — DAG-based adjustment, doubly robust estimation, diagnostics, and sensitivity analysis · [Report](/assets/pdf/insurance_flu_causal_inference.pdf) · [Code](https://github.com/DerekTsai7113/causal-inference-project)
+
+See the full [Research](/projects/) page for research questions, methods, evaluation design, publicly shareable findings, limitations, and my contributions.
 
 ## Methods & Expertise
 
