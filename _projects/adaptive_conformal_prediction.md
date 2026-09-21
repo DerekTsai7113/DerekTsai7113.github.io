@@ -3,7 +3,7 @@ layout: page
 title: Adaptive Conformal Prediction for Chaotic Time Series
 permalink: /projects/adaptive-conformal-prediction/
 description: Distribution-free uncertainty quantification and adaptive calibration under closed-loop chaotic forecasting.
-importance: 1
+importance: 4
 category: research
 related_publications: false
 ---
@@ -13,6 +13,8 @@ related_publications: false
 <p class="project-meta">University of Washington · STAT 538 Graduate Course Project</p>
 
 > **Format note.** The course required the final report to use a NeurIPS-style paper template. This was a course project and was **not** a NeurIPS submission.
+
+[Project report (PDF)](/assets/pdf/adaptive_conformal_prediction.pdf) · [Code](https://github.com/DerekTsai7113/adaptive-conformal-lorenz63)
 
 ## Research Question
 
@@ -47,7 +49,3 @@ The project reinforced a broader lesson that matters to my current research inte
 ## Limitations & Extensions
 
 The Lorenz-63 system is intentionally controlled and low-dimensional. The next questions are whether similar failure modes persist in higher-dimensional or real-world sequential systems, how adaptive conformal methods behave under more complex forms of dependence, and how to obtain useful conditional or regional coverage rather than only global marginal coverage.
-
-## Code
-
-[GitHub repository: adaptive-conformal-lorenz63](https://github.com/DerekTsai7113/adaptive-conformal-lorenz63)

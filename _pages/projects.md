@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /projects/
-description: Public projects in reliable machine learning, uncertainty quantification, sequential modeling, and causal inference.
+description: Research in reliable machine learning, uncertainty quantification, sequential modeling, neural data, and causal inference.
 nav: true
 nav_order: 1
 horizontal: false
@@ -10,9 +10,45 @@ horizontal: false
 
 <link rel="stylesheet" href="/assets/css/academic.css">
 
-My research interests center on reliable machine learning under distribution shift, uncertainty quantification, and sequential or multimodal learning. The projects below are work that I can discuss publicly in detail. Some ongoing and collaborative research is intentionally omitted from this site.
+My research interests center on reliable machine learning under distribution shift, uncertainty quantification, and sequential or multimodal learning. The pages below describe both research experience and selected graduate course projects.
 
-Each project page focuses on the research question, assumptions, methods, empirical findings, limitations, and what I learned from the analysis rather than reproducing a CV bullet list.
+For collaborative or submitted work, I summarize the research question, methods, evaluation design, and my contribution while omitting detailed final results that are not yet publicly available. Course projects include fuller empirical results and downloadable reports.
+
+<section class="research-entry" markdown="1">
+
+## [Decoding Prior-Induced Speech States from fMRI under Identical Acoustics](/projects/fmri-cross-condition-decoding/)
+
+<p class="research-meta">Academia Sinica · Submitted to IEEE ICASSP 2027</p>
+
+I worked on a state-space neural-decoding framework for distinguishing prior-induced perceptual states from fMRI responses while holding the degraded acoustic waveform constant. My work focused on model development, reproducible evaluation, cross-condition testing, statistical analysis, and manuscript preparation.
+
+[Read project →](/projects/fmri-cross-condition-decoding/){: .research-read-more }
+
+</section>
+
+<section class="research-entry" markdown="1">
+
+## [Speech–Brain Representation Alignment](/projects/speech-brain-alignment/)
+
+<p class="research-meta">Academia Sinica · Research Internship · 2026</p>
+
+I developed analysis pipelines for comparing layer-wise representations from pretrained speech encoders and language models with EEG and fMRI responses across clean and noisy speech, using regularized neural encoding, cross-validation, noise-ceiling normalization, and robust aggregation.
+
+[Read project →](/projects/speech-brain-alignment/){: .research-read-more }
+
+</section>
+
+<section class="research-entry" markdown="1">
+
+## [Cause-of-Death Modeling](/projects/cause-of-death-modeling/)
+
+<p class="research-meta">University of Washington · Research Assistant · 2025</p>
+
+I developed machine-learning benchmarks and hierarchical classification pipelines for heterogeneous verbal-autopsy and clinical data, with emphasis on severe class imbalance, multimodal feature fusion, age-stratified evaluation, and strict leakage control.
+
+[Read project →](/projects/cause-of-death-modeling/){: .research-read-more }
+
+</section>
 
 <section class="research-entry" markdown="1">
 
@@ -20,7 +56,7 @@ Each project page focuses on the research question, assumptions, methods, empiri
 
 <p class="research-meta">University of Washington · STAT 538 Graduate Course Project</p>
 
-I studied how standard split conformal prediction behaves when an LSTM is deployed recursively on the Lorenz-63 system. Closed-loop rollout creates an endogenous distribution shift as prediction errors feed back into future inputs, causing coverage to deteriorate with forecast horizon. I then evaluated rolling-window and EWMA recalibration strategies that adapt prediction intervals to the evolving error distribution.
+I studied how standard split conformal prediction behaves when an LSTM is deployed recursively on the Lorenz-63 system. Closed-loop rollout creates an endogenous distribution shift as prediction errors feed back into future inputs, and I evaluated rolling-window and EWMA recalibration strategies that adapt prediction intervals to the evolving error distribution.
 
 [Read project →](/projects/adaptive-conformal-prediction/){: .research-read-more }
 
