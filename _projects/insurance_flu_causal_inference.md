@@ -3,7 +3,7 @@ layout: page
 title: Private Insurance and Flu Vaccination: A Causal Inference Study
 permalink: /projects/insurance-flu-causal-inference/
 description: Observational causal inference with DAG-based adjustment, doubly robust estimation, diagnostics, and sensitivity analysis.
-importance: 2
+importance: 5
 category: research
 related_publications: false
 ---
@@ -11,6 +11,8 @@ related_publications: false
 <link rel="stylesheet" href="/assets/css/academic.css">
 
 <p class="project-meta">University of Washington · Graduate Course Project · Joint work with Yuhe Zhang</p>
+
+[Project report (PDF)](/assets/pdf/insurance_flu_causal_inference.pdf)
 
 ## Research Question
 
