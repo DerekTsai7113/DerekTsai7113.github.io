@@ -60,6 +60,7 @@ jobs:
             echo "❌ Citation update script failed with exit code $status." >> $GITHUB_STEP_SUMMARY
           fi
           set -e
+          exit "$status" # Fail the job when the citation script fails.
 
       - name: Save new citations.yml hash
         id: after
