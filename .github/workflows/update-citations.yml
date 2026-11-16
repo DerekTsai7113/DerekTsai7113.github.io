@@ -8,7 +8,28 @@ on:
   workflow_dispatch:
 
 jobs:
+  check-scholar-configuration:
+    runs-on: ubuntu-latest
+    outputs:
+      configured: ${{ steps.scholar.outputs.configured }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check Google Scholar ID
+        id: scholar
+        shell: bash
+        run: |
+          if grep -Eq '^[[:space:]]*scholar_userid:[[:space:]]*[[:alnum:]_-]+' _data/socials.yml; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::No scholar_userid is configured in _data/socials.yml; citation fetch skipped."
+          fi
+
   update-citations:
+    needs: check-scholar-configuration
+    if: needs.check-scholar-configuration.outputs.configured == 'true'
     runs-on: ubuntu-latest
 
     steps:
