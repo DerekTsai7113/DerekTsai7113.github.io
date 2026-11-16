@@ -99,3 +99,18 @@ jobs:
             git commit -m "Update Google Scholar citations"
             git push
           )
+
+  # GitHub automatically disables scheduled workflows in inactive public repos.
+  # Refresh this workflow's enabled status using GitHub's own API, without
+  # changing citation data or introducing third-party Actions.
+  keep-scheduled-workflow-active:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Refresh scheduled workflow activity
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/update-citations.yml/enable"
